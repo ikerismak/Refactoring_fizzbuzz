@@ -8,4 +8,8 @@ console.log(explorer);
 
 const explorersInNode = ExplorerService.filterByMission(explorer,"node")
 
-console.log(explorersInNode.length);
+console.log(explorersInNode);
+
+
+const ExplorersQty = ExplorerService.getAmountOfExplorersByMission(explorer, "node")
+console.log(ExplorersQty);
