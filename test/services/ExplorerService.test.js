@@ -82,7 +82,6 @@ describe("Unit tests for ExplorerService class", () => {
         ]
 
         const namesbyMission = ExplorerService.getExplorerUserNamesByMission(explorers, "node");
-        console.log(namesbyMission);
         expect(namesbyMission.length).toBe(2)
         expect(namesbyMission).toEqual([
 

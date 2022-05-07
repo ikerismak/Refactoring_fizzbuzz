@@ -19,7 +19,7 @@ console.log(ExplorersQty);
 const explorersUserNames = ExplorerService.getExplorerUserNamesByMission(explorer, "node")
 console.log(explorersUserNames);
 
-const explorers2 = [{
+const explorers2 = {
 
     name: 'Woopa15',
     githubUsername: 'ajolonauta15',
@@ -27,10 +27,11 @@ const explorers2 = [{
     mission: 'node',
     stacks: [ 'javascript', 'elixir', 'groovy', 'reasonML', 'elm' ],
 
-}]
+}
 
 
-const fizz = explorers2.map((explorers) => FizzbuzzService.appyValidationInExplorer(explorers))
-console.log(fizz);
+const fizz = FizzbuzzService.appyValidationInExplorer(explorers2)
+
+console.log(fizz)
 
 
