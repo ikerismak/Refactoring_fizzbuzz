@@ -13,3 +13,9 @@ console.log(explorersInNode);
 
 const ExplorersQty = ExplorerService.getAmountOfExplorersByMission(explorer, "node")
 console.log(ExplorersQty);
+
+
+const explorersUserNames = ExplorerService.getExplorerUserNamesByMission(explorer, "node")
+console.log(explorersUserNames);
+
+
