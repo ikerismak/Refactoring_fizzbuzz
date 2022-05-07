@@ -5,8 +5,10 @@ const FizzbuzzService = require("./lib/services/FizzbuzzService.js")
 
 const explorer = Reader.readJsonFile("explorers.json")
 console.log(explorer.length);
+const filterExplorer = explorer.filter((filter) => filter.mission == "node")
+console.log(filterExplorer.length);
 const mapFile = explorer.map((data) => data.name);
-console.log(mapFile);
+// console.log(mapFile);
 
 
 
