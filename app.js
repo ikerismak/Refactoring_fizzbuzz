@@ -1,9 +1,9 @@
 const fs = require("fs");
 
 // Part 1 Read json file ===========================
-// const rawdata = fs.readFileSync("explorers.json");
-// const explorers = JSON.parse(rawdata);
-// console.log(explorers);
+const rawdata = fs.readFileSync("explorers.json");
+const explorers = JSON.parse(rawdata);
+console.log(explorers);
 
 
 
@@ -24,7 +24,7 @@ const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mi
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
 console.log(usernamesInNode)
 
-// DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
+// DEAD CODE: Part 5,6,7, please remove this and go to Part 8!z
 
 // Part 5: Get a new list of explorers in node, if the score numbers is divisible by 3, I need a new propery called trick, and the value assigned is FIZZ, if not the value should be the score itself.
 // Score: 3, Trick: FIZZ.
