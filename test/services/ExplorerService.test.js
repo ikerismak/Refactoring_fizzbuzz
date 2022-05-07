@@ -29,7 +29,6 @@ describe("Unit tests for ExplorerService class", () => {
         
     });
 
-
     test("3.) Test for FilterByMission()", () => {
         const explorers = [
             {
@@ -91,7 +90,5 @@ describe("Unit tests for ExplorerService class", () => {
 
         )     
     });
-
-
-
+    
 });

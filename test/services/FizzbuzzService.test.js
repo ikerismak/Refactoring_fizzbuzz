@@ -4,7 +4,7 @@ const FizzbuzzService = require("../../lib/services/FizzbuzzService.js")
 
 describe("these are fizzbuzzservices tests",() =>{
 
-    test("1.- appyValidationInExplorer test FIZZ ",() =>{
+    test("1) .- appyValidationInExplorer test FIZZ ",() =>{
 
         const explorer = {
             
@@ -27,8 +27,7 @@ describe("these are fizzbuzzservices tests",() =>{
         )
     });
 
-
-    test("2.- appyValidationInExplorer test FIZZ ",() =>{
+    test("2) .- appyValidationInExplorer test FIZZ ",() =>{
 
         const explorer = {
             
@@ -62,7 +61,7 @@ describe("these are fizzbuzzservices tests",() =>{
         )
     });
 
-    test("3.- appyValidationInExplorer test BUZZ ",() =>{
+    test("3) .- appyValidationInExplorer test BUZZ ",() =>{
 
         const explorer = {
             
@@ -95,7 +94,7 @@ describe("these are fizzbuzzservices tests",() =>{
             } 
         )
     });
-    test("4.- appyValidationInExplorer test FIZZBUZZ ",() =>{
+    test("4) .- appyValidationInExplorer test FIZZBUZZ ",() =>{
 
         const explorer = {
             
