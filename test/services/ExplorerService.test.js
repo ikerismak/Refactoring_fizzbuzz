@@ -32,63 +32,63 @@ describe("Unit tests for ExplorerService class", () => {
     test("3.) Test for FilterByMission()", () => {
         const explorers = [
             {
-                name: 'Woopa15',
-                githubUsername: 'ajolonauta15',
+                name: "Woopa15",
+                githubUsername: "ajolonauta15",
                 score: 15,
-                mission: 'node',
-                stacks: [ 'javascript', 'elixir', 'groovy', 'reasonML', 'elm' ],
-                trick: 'FIZZ'
-              },
-              {
-                name: 'Woopa15',
-                githubUsername: 'ajolonauta13',
+                mission: "node",
+                stacks: [ "javascript", "elixir", "groovy", "reasonML", "elm" ],
+                trick: "FIZZ"
+            },
+            {
+                name: "Woopa15",
+                githubUsername: "ajolonauta13",
                 score: 15,
-                mission: 'node',
-                stacks: [ 'javascript', 'elixir', 'groovy', 'reasonML', 'elm' ],
-                trick: 'FIZZ'
-              }
-        ]
+                mission: "node",
+                stacks: [ "javascript", "elixir", "groovy", "reasonML", "elm" ],
+                trick: "FIZZ"
+            }
+        ];
 
         const namesbyMission = ExplorerService.getExplorerUserNamesByMission(explorers, "node");
         console.log(namesbyMission);
         expect(namesbyMission).toEqual([
 
-            'ajolonauta15',
-            'ajolonauta13'
+            "ajolonauta15",
+            "ajolonauta13"
         ]
 
-        )     
+        );     
     });
 
     test("4.) Test for FilterByMission()", () => {
         const explorers = [
             {
-                name: 'Woopa15',
-                githubUsername: 'ajolonauta15',
+                name: "Woopa15",
+                githubUsername: "ajolonauta15",
                 score: 15,
-                mission: 'node',
-                stacks: [ 'javascript', 'elixir', 'groovy', 'reasonML', 'elm' ],
-                trick: 'FIZZ'
-              },
-              {
-                name: 'Woopa15',
-                githubUsername: 'ajolonauta13',
+                mission: "node",
+                stacks: [ "javascript", "elixir", "groovy", "reasonML", "elm" ],
+                trick: "FIZZ"
+            },
+            {
+                name: "Woopa15",
+                githubUsername: "ajolonauta13",
                 score: 15,
-                mission: 'node',
-                stacks: [ 'javascript', 'elixir', 'groovy', 'reasonML', 'elm' ],
-                trick: 'FIZZ'
-              }
-        ]
+                mission: "node",
+                stacks: [ "javascript", "elixir", "groovy", "reasonML", "elm" ],
+                trick: "FIZZ"
+            }
+        ];
 
         const namesbyMission = ExplorerService.getExplorerUserNamesByMission(explorers, "node");
-        expect(namesbyMission.length).toBe(2)
+        expect(namesbyMission.length).toBe(2);
         expect(namesbyMission).toEqual([
 
-            'ajolonauta15',
-            'ajolonauta13'
+            "ajolonauta15",
+            "ajolonauta13"
         ]
 
-        )     
+        );     
     });
     
 });
