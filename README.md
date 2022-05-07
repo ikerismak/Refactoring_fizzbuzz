@@ -1,7 +1,7 @@
 # Refactoring_fizzbuzz
 
 
-##Dependencies
+Dependencies
 
 - Eslint
 - Jest 26 version 
