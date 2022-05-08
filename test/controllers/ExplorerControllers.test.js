@@ -1,4 +1,4 @@
-const ExplorerController = require("../../lib/controllers/ExplorerControllers.js")
+const ExplorerController = require("../../lib/controllers/ExplorerControllers.js");
 
 
 
@@ -9,8 +9,8 @@ describe("these are controllers test",() =>{
 
         const explorersByMission = ExplorerController.getExplorerBymission("node");
         const mappingArray = explorersByMission.map((element) => element.mission);
-        const missionConfirmed = mappingArray.includes("node")
-        expect(missionConfirmed).toBe(true)      
+        const missionConfirmed = mappingArray.includes("node");
+        expect(missionConfirmed).toBe(true);      
 
     });
 
@@ -18,8 +18,8 @@ describe("these are controllers test",() =>{
     test("2).- Test to get a list of explorers names by mision",()=> {
 
         const explorersNamesByMission = ExplorerController.getExplorersUsernameByMission("node");
-        const missionNamesConfirmed = explorersNamesByMission.includes("ajolonauta1")
-        expect(missionNamesConfirmed).toBe(true)      
+        const missionNamesConfirmed = explorersNamesByMission.includes("ajolonauta1");
+        expect(missionNamesConfirmed).toBe(true);      
 
     });
 
@@ -27,7 +27,7 @@ describe("these are controllers test",() =>{
     test("3 ).- Test to get the amount of explorers by mision",()=> {
 
         const amountExplorersNamesByMission = ExplorerController.getExplorerAmountByMission("node");
-        expect(amountExplorersNamesByMission).toBe(comparator.length);
+        expect(amountExplorersNamesByMission).toBe(10);
        
 
     });
